@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/lawfirm-documents",
+      "handler": "lawfirm-documents.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lawfirm-documents/count",
+      "handler": "lawfirm-documents.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/lawfirm-documents/:id",
+      "handler": "lawfirm-documents.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/lawfirm-documents",
+      "handler": "lawfirm-documents.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/lawfirm-documents/:id",
+      "handler": "lawfirm-documents.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/lawfirm-documents/:id",
+      "handler": "lawfirm-documents.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

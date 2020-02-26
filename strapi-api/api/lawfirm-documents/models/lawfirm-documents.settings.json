@@ -1,0 +1,34 @@
+{
+  "connection": "default",
+  "collectionName": "lawfirm_documents",
+  "info": {
+    "name": "Lawfirm Documents"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Documents": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "Multiple": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "test": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "lawfirm_documents": {
+      "model": "lawfirm-documents"
+    }
+  }
+}
